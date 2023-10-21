@@ -5,6 +5,7 @@ import Home from "../../pages/SMHome";
 import NotFound from "../../pages/SMNotFound";
 import Profile from "../../pages/Profile";
 import DonorDetail from "../../pages/DonorDetail";
+import Protected from "../../components/SMLayouts/SMProtected";
 
 export default function AppRouter() {
   return (
@@ -18,7 +19,7 @@ export default function AppRouter() {
           <Route path="/signup" element={<SMSignUp />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<Protected Screen={Profile} />} />
           <Route path="/profile/:id" element={<DonorDetail />} />
           {/* Protected Routes
           <Route
