@@ -1,0 +1,17 @@
+.bg_img_login {
+  background-image: url(../src/assets/bg_img.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  height: auto !important;
+}
+.paperColor {
+  background-color: white !important;
+}
+.bg_img_home {
+  background-image: url(../src/assets/bg_img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
